@@ -18,7 +18,7 @@ obj.rgb.apply();
 ### substract
 
 ```javascript
-obj.rgb.add();
+obj.rgb.substract();
 obj.rgb.apply();
 ```
 
@@ -27,6 +27,6 @@ obj.rgb.apply();
 ### invert
 
 ```javascript
-obj.rgb.add();
+obj.rgb.invert();
 obj.rgb.apply();
 ```
