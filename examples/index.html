@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <title>Pix</title>
+    </head>
+    
+    <body>
+        <div id="content">
+            
+        </div>
+        
+        <script src="../src/pix.js"></script>
+        <script src="../src/rgb.js"></script>
+        
+        <script>
+            var img = new Image();
+            img.onload = function() {
+                initPix();
+            }
+            img.src = '../assets/3.png';
+            
+            function initPix() {
+                var obj = pix.create( img, 'content' );
+                obj.rgb.substract();
+                // obj.rgb.invert();
+                obj.rgb.apply();
+            }
+        </script>
+        
+    </body>
+</html>
